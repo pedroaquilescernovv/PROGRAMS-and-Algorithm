@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MES</title>
+    <h1>MES</h1>
+</head>
+<body>
+    <script>
+        let n1 = parseFloat (prompt("Escolha o numero"))
+        let operador = prompt("Escolha um operador")
+        let n2 = parseFloat(prompt("Escolha outro numero"))
+        switch(operador){
+            case "+":
+                alert("A soma é: "+(n1 + n2))
+            break;
+            case "*":
+                alert("A multiplicação é: "+ (n1 * n2))
+            break;
+            case "/":
+                if(n2 === 0){
+                    alert("Nao é possivel dividir com 0")
+                }else
+                alert("A divisão é: "+(n1 / n2))
+            break;
+            case "-":
+                alert("A subtração é: " + (n1 - n2) )
+            break;
+            default:
+                alert("apenas operadores logicos")
+        }
+
+    </script>
+</body>
+</html>

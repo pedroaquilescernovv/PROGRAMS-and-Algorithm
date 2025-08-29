@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <h1></h1>
+
+</head>
+<body>
+    <script>
+       let dado1 = parseInt(Math.random() * 6 + 1)
+       let dado2 = parseInt(Math.random() * 6 + 1)
+
+       let contador = 0
+       while(dado1 !== dado2){
+            contador++
+        dado1 = parseInt(Math.random() * 6 + 1)
+        dado2 = parseInt(Math.random() * 6 + 1)
+    } document.write(" foi jogado :" + contador +" e foi repetido: " + dado1)
+    </script>
+</body>
+</html>

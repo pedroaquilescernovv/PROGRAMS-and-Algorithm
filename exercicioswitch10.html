@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MES</title>
+    <h1>MES</h1>
+</head>
+<body>
+    <script>
+        let n1 = parseFloat (prompt("escreva um numero em reais"))
+        let euro = parseInt = 6.30
+        let dolar = parseInt = 5.40
+        let libra = parseInt = 7.30
+        let peso = parseInt = 241
+        let conversor = prompt("digite a moeda")
+        switch(conversor){
+            case "euro":
+                alert("A coversao de reais para euro é: " + (n1 * euro) .toFixed(2).replace(".",","))
+            break;
+            case "dolar":
+                alert("A conversao de reais para dolar é: "+ (n1 * dolar).toFixed(2).replace(".",","))
+            break;
+            case "libra":
+                alert("A conversao de reais para libras é: " + (n1 *  libra).toFixed(2).replace(".",","))
+            break;
+            case "peso":
+                alert("A conversao de reais para pesos é: "+ (n1 * peso).toFixed(2).replace(".",","))
+        }
+    </script>
+</body>
+</html>

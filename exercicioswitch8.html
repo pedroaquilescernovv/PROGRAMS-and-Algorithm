@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MES</title>
+    <h1>MES</h1>
+</head>
+<body>
+    <script>
+    let n = prompt("Digite uma string ou numero");
+let numero = Number(n);
+
+console.log("Entrada:", n);
+console.log("Convertido:", numero);
+console.log("isNaN(numero):", isNaN(numero));
+console.log("!isNaN(numero):", !isNaN(numero));
+console.log("n.trim():", n.trim());
+
+switch(true){
+    case (!isNaN(numero) && n.trim() !== ""):
+        alert("É número: " + numero);
+        break;
+
+    case (isNaN(numero)):
+        alert("É string: " + n);
+        break;  
+
+    default:
+        alert("Digite string ou número");
+}
+
+    </script>
+</body>
+</html>
